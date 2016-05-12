@@ -32,6 +32,11 @@ gem "swf_fu"
 gem "rails_autolink"
 gem 'thin'
 gem 'paperclip'
+gem 'puma'
+gem 'sidekiq'
+
+gem "sqlite3", group: :sqlite
+gem "mysql2", "~> 0.3.17", group: :mysql
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -63,8 +68,6 @@ end
 
 group :development, :test do
   gem 'pry'
-  gem "sqlite3", group: :sqlite
-  gem "mysql2", "~> 0.3.17", group: :mysql
 end
 
 group :test do
