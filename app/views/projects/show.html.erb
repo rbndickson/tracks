@@ -17,7 +17,7 @@
 
   <%= empty_message_holder("not_done_context", @not_done_todos.empty?) %>
 
-  <%= show_grouped_todos({:collapsible => false, :show_empty_containers => false, :parent_container_type => 'project' }) %>
+  <%= show_grouped_todos({:collapsible => false, :show_empty_containers => false, :parent_container_type => 'context' }) %>
 
   <%= show_deferred_pending_todos(@deferred_todos, @pending_todos, deferred_pending_options) %>
 
