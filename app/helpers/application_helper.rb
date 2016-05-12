@@ -76,11 +76,11 @@ module ApplicationHelper
   end
 
   def item_link_to_context(item)
-    link_to_context( item.context, prefs.verbose_action_descriptors ? "[#{item.context.name}]" : "[C]" )
+    link_to_context( item.context, prefs.verbose_action_descriptors ? "#{item.context.name}" : "[C]" )
   end
 
   def item_link_to_project(item)
-    link_to_project( item.project, prefs.verbose_action_descriptors ? "[#{item.project.name}]" : "[P]" )
+    link_to_project( item.project, prefs.verbose_action_descriptors ? "#{item.project.name}" : "[P]" )
   end
 
   def render_flash
