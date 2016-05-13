@@ -52,3 +52,24 @@ body {
   color: $text-color;
   background-color: $body-bg;
 }
+
+/* Overriding Bootstrap */
+$primary-color: #1725AA;
+
+.bootstrap .navbar .badge {
+  background: $primary-color;
+}
+
+.bootstrap a, .bootstrap a:hover,  {
+    color: $primary-color;
+}
+
+.bootstrap .nav > li > a {
+    border-bottom: 2px solid #fff;
+}
+
+.bootstrap .nav > li > a:hover,
+.bootstrap .nav > li > a:focus {
+    background-color: #fff;
+    border-bottom: 2px solid $primary-color;
+}
