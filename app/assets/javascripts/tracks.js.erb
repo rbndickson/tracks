@@ -351,7 +351,7 @@ var TodoItems = {
 
         /* set behavior for star icon */
         $(document).on("click", ".item-container a.star_item", function (ev){
-            put_with_ajax_and_block_element(this.href, $(this));
+            put_with_ajax_and_block_element(this.href);
             return false;
         });
 
