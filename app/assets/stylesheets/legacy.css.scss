@@ -774,10 +774,16 @@ div.project_settings {
     margin-top: 0px;
     margin-left: -5px;
     margin-right: -5px;
+    text-align: right;
     color: #666;
     font-style: italic;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: normal;
+}
+
+div.project_settings a.icon {
+    float: none;
+    color: #666;
 }
 
 #project-next-prev {

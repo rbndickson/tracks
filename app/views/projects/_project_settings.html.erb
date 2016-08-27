@@ -1,21 +1,12 @@
 <% project = project_settings -%>
 <div id="<%= dom_id(project) %>" class="project">
-  <div class="project_settings"><%= t('projects.this_project') %>
-    <% if project.completed? -%><%= t('projects.was_marked_complete') %>
-    <% elsif project.hidden? -%><%= t('projects.was_marked_hidden') %>
-    <% else -%><%= t('projects.is_active') %>
+  <div class="project_settings">
+    <% if project.completed? -%>
+      <%= icon_fw('check') %>
+    <% elsif project.hidden? -%>
+      <%= icon_fw('eye-slash') %>
     <% end -%>
-    <% if project.default_context.nil? -%>
-      <%= t('projects.with_no_default_context') %>
-    <% else -%>
-      <%= t('projects.with_default_context', :context_name => project.default_context.name) %>
-    <% end -%>
-    <% if project.default_tags.nil? || project.default_tags.blank? -%>
-      <%= t('projects.with_no_default_tags') %>.
-    <% else -%>
-      <%= t('projects.with_default_tags', :tags => project.default_tags) %>.
-    <% end -%>
-    <%= link_to_edit_project(project, t('projects.edit_project_settings')) %>
+    <%= link_to_edit_project(project, icon_fw('cog')) %>
   </div>
   <% if project.description.present? -%>
     <div class="project_description"><%= render_text(project.description) %></div>

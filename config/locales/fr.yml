@@ -195,7 +195,7 @@ fr:
     - ven
     - sam
     abbr_month_names:
-    - 
+    -
     - jan.
     - fév.
     - mar.
@@ -224,7 +224,7 @@ fr:
       only_day: "%e"
       short: "%e %b"
     month_names:
-    - 
+    -
     - janvier
     - février
     - mars
@@ -552,7 +552,6 @@ fr:
     to_new_project_page: Aller à la page du nouveau projet
     was_marked_complete: est complété
     was_marked_hidden: est caché
-    with_default_context: avec '%{context_name}' comme contexte par défaut
     with_no_default_context: sans contexte par défaut
     with_no_default_tags: et sans étiquettes par défaut
   search:
@@ -904,7 +903,7 @@ fr:
         from: de
         last: dernier
         month_names:
-        - 
+        -
         - Janvier
         - Février
         - Mars

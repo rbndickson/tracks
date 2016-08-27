@@ -192,7 +192,7 @@ es:
     - Vie
     - Sab
     abbr_month_names:
-    - 
+    -
     - Ene
     - Feb
     - Mar
@@ -219,7 +219,7 @@ es:
       longer: "%A, %d %b %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Enero
     - Febrero
     - Marzo
@@ -514,8 +514,6 @@ es:
     to_new_project_page: Take me to the new project page
     was_marked_complete: has been marked as completed
     was_marked_hidden: has been marked as hidden
-    with_default_context: with a default context of '%{context_name}'
-    with_default_tags: and with '%{tags}' as the default tags
     with_no_default_context: with no default context
     with_no_default_tags: and with no default tags
   search:
@@ -859,7 +857,7 @@ es:
         from: from
         last: last
         month_names:
-        - 
+        -
         - January
         - February
         - Match

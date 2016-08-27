@@ -190,7 +190,7 @@ cs:
     - Pá
     - So
     abbr_month_names:
-    - 
+    -
     - Led
     - "Úno"
     - Bře
@@ -217,7 +217,7 @@ cs:
       longer: "%A %B %d, %Y"
       short: "%b %d"
     month_names:
-    - 
+    -
     - Leden
     - "Únor"
     - Březen
@@ -511,8 +511,6 @@ cs:
     to_new_project_page: přejít k novému projektu
     was_marked_complete: byl označen jako hotový
     was_marked_hidden: byl označen jako skrytý
-    with_default_context: s výchozím kontextem '%{context_name}'
-    with_default_tags: a s '%{tags}' jako výchozí štítky
     with_no_default_context: bez výchozího kontextu
     with_no_default_tags: a nemá žádné výchozí značky
   search:
@@ -850,7 +848,7 @@ cs:
         from: od
         last: poslední
         month_names:
-        - 
+        -
         - Leden
         - "Únor"
         - Březen

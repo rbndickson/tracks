@@ -454,8 +454,6 @@ he:
     to_new_project_page: "עבור לעמוד הפרוייקט החדש"
     was_marked_complete: "סומן כבוצע"
     was_marked_hidden: "סומן כמוסתר"
-    with_default_context: "עם הקשר בירת מחדל '%{context_name}'"
-    with_default_tags: "עם התגיות  '%{tags}' כברירת המחדל"
     with_no_default_context: "ללא הקשר ברירת מחדל"
     with_no_default_tags: "וללא תגיות ברירת מחדל"
   search:

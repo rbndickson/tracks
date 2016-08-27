@@ -757,12 +757,10 @@ en:
     show_form: Add a project
     actions_in_project_title: Actions in this project
     delete_project_confirmation: "Are you sure that you want to delete the project '%{name}'?"
-    with_default_context: "with a default context of '%{context_name}'"
     set_default_tags_notice: Set project's default tags to %{default_tags}
     is_active: is active
     settings: Settings
     completed_projects: Completed projects
-    with_default_tags: "and with '%{tags}' as the default tags"
     list_projects: TRACKS::List Projects
     list_reviews: TRACKS::Review
     project_saved_status: Project saved

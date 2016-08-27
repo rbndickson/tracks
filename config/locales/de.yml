@@ -189,7 +189,7 @@ de:
     - Fr
     - Sa
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mär
@@ -218,7 +218,7 @@ de:
       only_day: "%d"
       short: "%d. %b"
     month_names:
-    - 
+    -
     - Januar
     - Februar
     - März
@@ -520,8 +520,6 @@ de:
     to_new_project_page: Zu neuem Projekt weiterleiten
     was_marked_complete: wurde als erledigt markiert
     was_marked_hidden: wurde als verborgen markiert
-    with_default_context: mit dem Standard-Kontext '%{context_name}'
-    with_default_tags: und mit '%{tags}' als Standard-Tags
     with_no_default_context: hat keinen Standard-Kontext
     with_no_default_tags: und hat keine Standard-Tags
   search:
@@ -869,7 +867,7 @@ de:
         from: von
         last: zuletzt
         month_names:
-        - 
+        -
         - Januar
         - Februar
         - März

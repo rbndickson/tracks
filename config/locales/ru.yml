@@ -208,7 +208,7 @@ ru:
     - "Пт"
     - "Сб"
     abbr_month_names:
-    - 
+    -
     - "Янв"
     - "Фев"
     - "Мар"
@@ -237,7 +237,7 @@ ru:
       only_day: ''
       short: "%b %d"
     month_names:
-    - 
+    -
     - "января"
     - "февраля"
     - "марта"
@@ -615,8 +615,6 @@ ru:
     to_new_project_page: "Перейти на страницу нового проекта"
     was_marked_complete: "помечен как выполненный"
     was_marked_hidden: "помечен как скрытый"
-    with_default_context: "с контекстом по-умолчанию '%{context_name}'"
-    with_default_tags: "и с меткой '%{tags}' по-умолчанию"
     with_no_default_context: "без контекста по-умолчанию"
     with_no_default_tags: "и без меток по-умолчанию"
   search:
@@ -1023,7 +1021,7 @@ ru:
         from: "с"
         last: "последний"
         month_names:
-        - 
+        -
         - "Январь"
         - "Февраль"
         - "Март"

@@ -203,7 +203,7 @@ nl:
     - Vr
     - Za
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Maa
@@ -232,7 +232,7 @@ nl:
       only_day: "%e"
       short: "%e %b"
     month_names:
-    - 
+    -
     - Januari
     - Februari
     - Maart
@@ -598,8 +598,6 @@ nl:
     to_new_project_page: Ga naar de nieuwe projectpagina
     was_marked_complete: is gemarkeerd als voltooid
     was_marked_hidden: is gemarkeerd als verborgen
-    with_default_context: met een standaard context  '%{context_name}'
-    with_default_tags: en met '%{tags}' als de standaard tags
     with_no_default_context: zonder standaard context
     with_no_default_tags: en zonder standaard tags
   search:
@@ -1007,7 +1005,7 @@ nl:
         from: vanaf
         last: laatste
         month_names:
-        - 
+        -
         - januari
         - februari
         - maart
