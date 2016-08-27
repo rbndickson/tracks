@@ -286,7 +286,7 @@ h2 {
     }
 
     a:hover {
-        color: #cc3334;
+        color: $primary-color;
         background-color: transparent;
         text-decoration: none;
     }
@@ -512,6 +512,21 @@ div.note_footer a, div.note_footer a:hover {
 div.link_in_container_header {
     margin-top:12px;
     float: right;
+}
+
+div.icon_in_container_header {
+  float: right;
+  margin-top: 5px;
+  color: #666;
+  font-size: 18px;
+}
+
+div.icon_in_container_header a {
+  color: #666;
+}
+
+div.icon_in_container_header a:hover {
+  color: $primary-color;
 }
 
 div#project_status > div {
@@ -770,7 +785,6 @@ div.alpha_sort, div.tasks_sort,span.sort_separator {
 
 div.project_settings {
     background: #eee;
-    padding: 5px;
     margin-top: 0px;
     margin-left: -5px;
     margin-right: -5px;
@@ -781,21 +795,22 @@ div.project_settings {
     font-weight: normal;
 }
 
-div.project_settings a.icon {
-    float: none;
+.project-settings-button {
+    float: right;
+    margin-top: 4px;
     color: #666;
 }
 
 #project-next-prev {
     text-align:right;
-    color: #eee;
+    color: #b3b3b3;
 }
 
-#project-next-prev a {
-    color: #eee;
+.light-link a {
+    color: #b3b3b3;
 }
 
-#project-next-prev a:hover {
+.light-link a:hover {
     color: $primary-color;
     text-decoration: none;
 }

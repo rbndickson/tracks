@@ -15,7 +15,7 @@ module ProjectsHelper
   end
 
   def project_next_prev
-    content_tag(:div, :id=>"project-next-prev", :class=>"project-next-prev") do
+    content_tag(:div, :id=>"project-next-prev", :class=>"light-link") do
       html = ""
       html << link_to_project(@previous_project, icon_fw('chevron-left')) if @previous_project
       html << " | " if @previous_project && @next_project
@@ -29,7 +29,7 @@ module ProjectsHelper
     next_project = ""
     prev_project = content_tag(:li, link_to_project_mobile(@previous_project, "5", @previous_project.shortened_name), :class=>"prev") if @previous_project
     next_project = content_tag(:li, link_to_project_mobile(@next_project, "6", @next_project.shortened_name), :class=>"next") if @next_project
-    return content_tag(:ul, "#{prev_project}#{next_project}".html_safe, :class=>"next-prev-project")
+    return content_tag(:ul, "#{prev_project}#{next_project}".html_safe, :class=>"light-link")
   end
 
   def project_summary(project)

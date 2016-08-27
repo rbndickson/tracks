@@ -6,7 +6,6 @@
     <% elsif project.hidden? -%>
       <%= icon_fw('eye-slash') %>
     <% end -%>
-    <%= link_to_edit_project(project, icon_fw('cog')) %>
   </div>
   <% if project.description.present? -%>
     <div class="project_description"><%= render_text(project.description) %></div>

@@ -755,7 +755,7 @@ en:
     with_no_default_context: with no default context
     delete_project: Delete project
     show_form: Add a project
-    actions_in_project_title: Actions in this project
+    actions_in_project_title: ''
     delete_project_confirmation: "Are you sure that you want to delete the project '%{name}'?"
     set_default_tags_notice: Set project's default tags to %{default_tags}
     is_active: is active

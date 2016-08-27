@@ -1,6 +1,9 @@
 <div class="container project">
   <h2 id="project_name_container">
     <%= show_project_name(project) %>
+    <div class="project-settings-button">
+      <%= link_to_edit_project(project, icon_fw('cog')) %>
+    </div>
   </h2>
-    <%= show_project_settings(project) %>
+  <%= show_project_settings(project) %>
 </div>

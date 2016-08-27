@@ -19,11 +19,9 @@
 
   <%= show_deferred_pending_todos(@deferred_todos, @pending_todos, deferred_pending_options) %>
 
-  <%= show_done_todos(@done, done_todo_options) unless @done.nil? %>
-
   <div class="container">
     <div id="notes">
-      <div class="add_note_link link_in_container_header"><%= link_to t('projects.add_note'), '#' %> </div>
+      <div class="add_note_link icon_in_container_header"><%= link_to icon_fw('plus'), '#' %> </div>
       <h2><%= t('projects.notes') %></h2>
       <div id="empty-n" style="display:<%= @project.notes.empty? ? 'block' : 'none'%>;">
         <div class="message"><p><%= t('projects.no_notes_attached') %></p></div>
@@ -34,6 +32,9 @@
 
   <div id="new-note" style="display:none;">
     <%= render :partial => "notes/note_edit_form", :object => @new_note, :locals => {:submit_text => t('projects.add_note_submit')} %>
+  </div>
+  <div class="light-link">
+    <%= link_to('Show completed actions', determine_done_path) unless @done.nil? %>
   </div>
 
   <%= project_next_prev %>
