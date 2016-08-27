@@ -37,7 +37,7 @@ module TodosHelper
       :collapsible => false,
       :append_descriptor => nil,
       :parent_container_type => nil,
-      :show_empty_containers => true
+      :show_empty_containers => false
     }
   end
 
