@@ -15,11 +15,11 @@ module ProjectsHelper
   end
 
   def project_next_prev
-    content_tag(:div, :id=>"project-next-prev") do
+    content_tag(:div, :id=>"project-next-prev", :class=>"project-next-prev") do
       html = ""
-      html << link_to_project(@previous_project, "&laquo; #{@previous_project.shortened_name}".html_safe) if @previous_project
+      html << link_to_project(@previous_project, icon_fw('chevron-left')) if @previous_project
       html << " | " if @previous_project && @next_project
-      html << link_to_project(@next_project, "#{@next_project.shortened_name} &raquo;".html_safe) if @next_project
+      html << link_to_project(@next_project, icon_fw('chevron-right')) if @next_project
       html.html_safe
     end
   end

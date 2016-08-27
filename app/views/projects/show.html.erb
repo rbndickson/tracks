@@ -11,8 +11,6 @@
   end
 -%>
 <div id="display_box">
-  <%= project_next_prev %>
-
   <%= render :partial => "project_settings_container", :locals => {:project => @project} %>
 
   <%= empty_message_holder("not_done_context", @not_done_todos.empty?) %>
@@ -37,6 +35,8 @@
   <div id="new-note" style="display:none;">
     <%= render :partial => "notes/note_edit_form", :object => @new_note, :locals => {:submit_text => t('projects.add_note_submit')} %>
   </div>
+
+  <%= project_next_prev %>
 
 </div>
 

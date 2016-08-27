@@ -788,6 +788,16 @@ div.project_settings a.icon {
 
 #project-next-prev {
     text-align:right;
+    color: #eee;
+}
+
+#project-next-prev a {
+    color: #eee;
+}
+
+#project-next-prev a:hover {
+    color: $primary-color;
+    text-decoration: none;
 }
 
 /* Form elements */
