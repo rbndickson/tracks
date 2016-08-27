@@ -23,9 +23,6 @@
     <div id="notes">
       <div class="add_note_link icon_in_container_header"><%= link_to icon_fw('plus'), '#' %> </div>
       <h2><%= t('projects.notes') %></h2>
-      <div id="empty-n" style="display:<%= @project.notes.empty? ? 'block' : 'none'%>;">
-        <div class="message"><p><%= t('projects.no_notes_attached') %></p></div>
-      </div>
       <%= render :partial => "notes/notes_summary", :collection => @project.notes %>
     </div>
   </div>
