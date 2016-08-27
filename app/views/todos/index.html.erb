@@ -6,8 +6,9 @@
   <% if @group_view_by == 'project' -%>
     <%= show_todos_without_project(@todos_without_project) -%>
   <% end -%>
-
-  <%= show_done_todos(@done, {:parent_container_type => @group_view_by, :collapsible => true}) unless @done.nil? %>
+  <div class="light-link pull-right">
+    <%= link_to('Show Completed Todos', determine_done_path) %>
+  </div>
 </div>
 
 <div id="input_box">
