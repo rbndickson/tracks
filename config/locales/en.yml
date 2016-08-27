@@ -388,7 +388,7 @@ en:
     navigation:
       manage_users_title: Add or delete users
       recurring_todos: Recurring todos
-      api_docs: REST API Docs
+      api_docs: API Docs
       feeds: Feeds
       starred: Starred
       notes_title: View all notes
@@ -399,7 +399,7 @@ en:
       export_title: Export data
       import_title: Import data
       preferences: Preferences
-      integrations_: Integrate Tracks
+      integrations_: Integrations
       feeds_title: See a list of available feeds
       calendar_title: Calendar of due actions
       completed_tasks: Done
@@ -795,7 +795,7 @@ en:
     note_header: Note %{id}
     delete_note_confirm: "Are you sure that you want to delete the note '%{id}'?"
     in_project: "In: "
-    save_status_message: "Note %{id} was saved"    
+    save_status_message: "Note %{id} was saved"
   integrations:
     opensearch_description: Search in Tracks
   preferences:
