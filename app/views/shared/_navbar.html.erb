@@ -31,8 +31,6 @@
             <li><%= link_to t('layouts.navigation.calendar'), calendar_path, title: t('layouts.navigation.calendar_title') %></li>
             <li><%= link_to t('layouts.navigation.tickler'), tickler_path, accesskey: 'k', title: t('layouts.navigation.tickler_title') %></li>
             <li><%= link_to t('layouts.navigation.completed_tasks'), done_overview_path, accesskey: 'd', title: t('layouts.navigation.completed_tasks_title') %></li>
-            <li><%= link_to t('layouts.navigation.feeds'), feeds_path, title: t('layouts.navigation.feeds_title') %></li>
-            <li><%= link_to t('layouts.navigation.stats'), stats_path, title: t('layouts.navigation.stats_title') %></li>
             <li class="divider"></li>
             <li id="menu_view_toggle_contexts"><%= link_to(t('layouts.toggle_contexts'), "#", {:title => t('layouts.toggle_contexts_title'), :id => "toggle-contexts-nav"}) %></li>
             <li><%= link_to(t('layouts.toggle_notes'), "#", {:accesskey => "S", :title => t('layouts.toggle_notes_title'), :id => "toggle-notes-nav"}) %></li>
@@ -57,6 +55,8 @@
             <li class="divider"></li>
             <li class="dropdown-header"><%= current_user.display_name %></li>
             <li><%= link_to icon_fw('wrench', t('layouts.navigation.preferences')), preferences_path, accesskey: 'u', title: t('layouts.navigation.preferences_title') %></li>
+            <li><%= link_to icon_fw('bar-chart',t('layouts.navigation.stats')), stats_path, title: t('layouts.navigation.stats_title') %></li>
+            <li><%= link_to icon_fw('rss',t('layouts.navigation.feeds')), feeds_path, title: t('layouts.navigation.feeds_title') %></li>
             <li><%= link_to icon_fw('download', t('layouts.navigation.export')), data_path, accesskey: 'e', title: t('layouts.navigation.export_title') %></li>
             <li><%= link_to icon_fw('upload', t('layouts.navigation.import')), import_data_path, accesskey: 'i', title: t('layouts.navigation.import_title') %></li>
             <li><%= link_to icon_fw('envelope', t('layouts.navigation.integrations_')), integrations_path %></li>
