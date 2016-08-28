@@ -271,7 +271,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_group_view_by
-    @group_view_by = params['_group_view_by'] || cookies['group_view_by'] || 'project'
+    @group_view_by = cookies['group_view_by'] || params['_group_view_by'] || 'project'
   end
 
 end
