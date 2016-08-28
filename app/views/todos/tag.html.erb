@@ -21,7 +21,9 @@
 
   <%= show_hidden_todos(@hidden_todos, hidden_options) unless @hidden_todos.nil? %>
 
-  <%= show_done_todos(@done, done_options) unless @done.nil? %>
+  <div class="light-link pull-right">
+    <%= link_to(t('Show Completed Starred Todos'), determine_done_path) %>
+  </div>
 
 </div>
 
