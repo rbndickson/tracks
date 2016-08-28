@@ -307,10 +307,10 @@ module TodosHelper
   def project_and_context_links(todo, parent_container_type, opts = {})
     links = ''
     if todo.completed?
-      links << item_link_to_context( todo ) unless opts[:suppress_context]
+      # links << item_link_to_context( todo ) unless opts[:suppress_context]
       links << item_link_to_project( todo ) unless opts[:suppress_project] || todo.project.nil?
     else
-      links << item_link_to_context( todo ) if include_context_link(todo, parent_container_type)
+      # links << item_link_to_context( todo ) if include_context_link(todo, parent_container_type)
       links << item_link_to_project( todo ) if include_project_link(todo, parent_container_type)
     end
 
