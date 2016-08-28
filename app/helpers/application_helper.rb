@@ -17,7 +17,7 @@ module ApplicationHelper
 
   def container_toggle(id)
     link_to(
-      image_tag("blank.png", :alt => t('common.collapse_expand')),
+      icon_fw('minus', :alt => t('common.collapse_expand')),
       "#",
       {:class => "container_toggle", :id => id} )
   end

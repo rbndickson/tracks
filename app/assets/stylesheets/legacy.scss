@@ -5,6 +5,7 @@ $message-background-color: #ffffed;
 
 $primary-color: #1725AA;
 $dark-grey: #787878;
+$light-grey: #b3b3b3;
 
 .needsreview {
     background: #ffC;
@@ -279,13 +280,7 @@ a.show_successors:hover, a.link_to_successors:hover {background-image: image-url
     border-radius: 4px 4px 0 0;
 }
 
-.container_toggle img {
-    height: 14px;
-    width: 14px;
-    border: 0px;
-    background: image-url('collapse_expand.png') no-repeat left top;
-
-    .context_collapsed & { background-position: left bottom; }
+.container_toggle {
 }
 
 h2 {
@@ -811,7 +806,7 @@ div.project_settings {
 }
 
 .light-link a {
-    color: #b3b3b3;
+    color: $light-grey;
 }
 
 .light-link a:hover {
