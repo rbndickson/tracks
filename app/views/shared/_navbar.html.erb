@@ -27,7 +27,7 @@
           <ul class="dropdown-menu">
             <li><%= link_to t('common.contexts'), contexts_path, accesskey: 'c', title: t('layouts.navigation.contexts_title') %></li>
             <li><%= link_to t('common.notes'), notes_path, accesskey: 'o', title: t('layouts.navigation.notes_title') %></li>
-            <li><%= link_to t('layouts.navigation.recurring_todos'), controller: 'recurring_todos', action: 'index', title: t('layouts.navigation.recurring_todos_title') %></li>
+            <li><%= link_to t('layouts.navigation.recurring_todos'), recurring_todos_path, title: t('layouts.navigation.recurring_todos_title') %></li>
             <li><%= link_to t('layouts.navigation.calendar'), calendar_path, title: t('layouts.navigation.calendar_title') %></li>
             <li><%= link_to t('layouts.navigation.tickler'), tickler_path, accesskey: 'k', title: t('layouts.navigation.tickler_title') %></li>
             <li><%= link_to t('layouts.navigation.completed_tasks'), done_overview_path, accesskey: 'd', title: t('layouts.navigation.completed_tasks_title') %></li>
