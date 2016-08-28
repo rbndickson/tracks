@@ -323,8 +323,8 @@ en:
     collapse_expand: Collapse/expand
   shared:
     multiple_next_actions: Multiple next actions (one on each line)
-    hide_form: Hide form
-    toggle_single: Add a next action
+    hide_form: '-'
+    toggle_single: '+'
     add_action: Add action
     add_actions: Add actions
     add_context: Add Context
@@ -332,7 +332,7 @@ en:
     toggle_single_title: Add a new next action
     project_for_all_actions: Project for all actions
     context_for_all_actions: Context for all actions
-    toggle_multi: Add multiple next actions
+    toggle_multi: '++'
     separate_tags_with_commas: separate with commas
     toggle_multi_title: Toggle single/multi new action form
     hide_action_form_title: Hide new action form
@@ -705,12 +705,12 @@ en:
   contexts:
     delete_context_title: Delete context
     all_completed_tasks_title: "TRACKS::All Completed actions in the context '%{context_name}'"
-    hide_form: Hide form
+    hide_form: '-'
     show_form_title: Add a context
     delete_context_confirmation: "Are you sure that you want to delete the context '%{name}'? Be aware that this will also delete all (recurring) actions in this context!"
     delete_context: Delete context
     edit_context: Edit context
-    hide_form_title: Hide new context form
+    hide_form_title: '-'
     context_hide: Hide from front page?
     context_state: Context state
     hidden_contexts: Hidden contexts
@@ -737,7 +737,7 @@ en:
     default_tags_removed_notice: Removed the default tags
     default_context_set: Set project's default context to %{default_context}
     all_completed_tasks_title: "TRACKS::List All Completed Actions in Project '%{project_name}'"
-    hide_form: Hide form
+    hide_form: '-'
     page_title: "TRACKS::Project: %{project}"
     show_form_title: Create a new project
     list_completed_projects: TRACKS::List Completed Projects
@@ -751,10 +751,10 @@ en:
     no_last_completed_recurring_todos: No completed recurring todos found
     notes_empty: There are no notes for this project
     no_projects: Currently there are no projects
-    hide_form_title: Hide new project form
+    hide_form_title: '-'
     with_no_default_context: with no default context
     delete_project: Delete project
-    show_form: Add a project
+    show_form: '+'
     actions_in_project_title: ''
     delete_project_confirmation: "Are you sure that you want to delete the project '%{name}'?"
     set_default_tags_notice: Set project's default tags to %{default_tags}
