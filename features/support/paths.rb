@@ -11,7 +11,7 @@ module NavigationHelpers
     options[:locale] = @locale if @locale
     options[:_group_view_by] = @group_view_by if @group_view_by
     @source_view = nil
-    
+
     case page_name
 
     when /the home\s?page/
@@ -118,7 +118,7 @@ module NavigationHelpers
       tag_path($1, options)
     when /the change password page/
       change_password_user_path @current_user
-      
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
