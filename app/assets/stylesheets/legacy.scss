@@ -4,6 +4,7 @@ $form-background-color: #eee;
 $message-background-color: #ffffed;
 
 $primary-color: #1725AA;
+$dark-grey: #787878;
 
 .needsreview {
     background: #ffC;
@@ -109,6 +110,14 @@ h3 {
 }
 
 /* Rules for the icon links */
+
+a.fa-icon {
+    color: $dark-grey;
+}
+
+a.fa-icon:hover {
+    color: $primary-color;
+}
 
 img.edit_item {
     background: image-url('edit.png') no-repeat top;
@@ -369,11 +378,6 @@ div.item-container {
 
 .sf-item-selected {
     background: #ddd;
-}
-
-a.recurring_icon {
-    vertical-align: middle;
-    background-color: transparent;
 }
 
 a.icon {

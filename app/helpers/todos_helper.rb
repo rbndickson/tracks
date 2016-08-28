@@ -233,11 +233,11 @@ module TodosHelper
     return link+successors
   end
 
-  def image_tag_for_recurring_todo(todo)
+  def recurring_todo_icon_link(todo)
     return link_to(
-      image_tag("recurring16x16.png"),
+      icon_fw('retweet'),
       recurring_todos_path,
-      :class => "recurring_icon", :title => recurrence_pattern_as_text(todo.recurring_todo))
+      :class => "fa-icon", :id => "recurring-icon-"+todo.id.to_s, :title => recurrence_pattern_as_text(todo.recurring_todo))
   end
 
   def image_tag_for_star(todo)

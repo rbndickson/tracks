@@ -59,12 +59,12 @@ end
 When /^I delete the pattern "([^"]*)"$/ do |pattern_name|
   pattern = @current_user.recurring_todos.where(:description => pattern_name).first
   expect(pattern).to_not be_nil
-  
+
   handle_js_confirm do
     click_link "delete_icon_#{pattern.id}"
   end
   expect(get_confirm_text).to eq("Are you sure that you want to delete the recurring action '#{pattern_name}'?")
-  
+
   expect(page).to_not have_css("#delete_icon_#{pattern.id}")
 end
 
@@ -81,7 +81,7 @@ When /^I follow the recurring todo link of "([^"]*)"$/ do |action_description|
   todo = @current_user.todos.where(:description => action_description).first
   expect(todo).to_not be_nil
 
-  page.find(:xpath, "//div[@id='todo_#{todo.id}']//a[@class='recurring_icon']/img").click
+  page.find(:xpath, "//div[@id='todo_#{todo.id}']//a[@id='recurring-icon-#{todo.id}']/").click
   sleep 1 # wait for page to load
 end
 
