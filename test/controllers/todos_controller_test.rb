@@ -844,6 +844,7 @@ class TodosControllerTest < ActionController::TestCase
     todo = users(:admin_user).todos.first
     url = 'http://example.com/foo?bar=/baz'
     todo.notes = "foo #{url} bar"
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select "a[href=#{url}]"
@@ -855,6 +856,7 @@ class TodosControllerTest < ActionController::TestCase
     todo = users(:admin_user).todos.first
     url = 'http://example.com/'
     todo.notes = "foo #{url} bar"
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select "a[target='_blank']"
@@ -864,6 +866,7 @@ class TodosControllerTest < ActionController::TestCase
     login_as(:admin_user)
     todo = users(:admin_user).todos.first
     todo.notes = "A normal description."
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select("div#notes_todo_#{todo.id}", "A normal description.")
@@ -873,6 +876,7 @@ class TodosControllerTest < ActionController::TestCase
     login_as(:admin_user)
     todo = users(:admin_user).todos.first
     todo.notes = "A *bold description*."
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select("div#notes_todo_#{todo.id}", "A bold description.")
@@ -883,6 +887,7 @@ class TodosControllerTest < ActionController::TestCase
     login_as(:admin_user)
     todo = users(:admin_user).todos.first
     todo.notes = "A link to http://github.com/."
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select("div#notes_todo_#{todo.id}", 'A link to http://github.com/.')
@@ -893,6 +898,7 @@ class TodosControllerTest < ActionController::TestCase
     login_as(:admin_user)
     todo = users(:admin_user).todos.first
     todo.raw_notes = "A Mail.app message://<ABCDEF-GHADB-123455-FOO-BAR@example.com> link"
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select("div#notes_todo_#{todo.id}", 'A Mail.app message://&lt;ABCDEF-GHADB-123455-FOO-BAR@example.com&gt; link')
@@ -904,6 +910,7 @@ class TodosControllerTest < ActionController::TestCase
     login_as(:admin_user)
     todo = users(:admin_user).todos.first
     todo.notes = ' "link me to onenote":onenote:///E:\OneNote\dir\notes.one#PAGE&section-id={FD597D3A-3793-495F-8345-23D34A00DD3B}&page-id={1C95A1C7-6408-4804-B3B5-96C28426022B}&end'
+    todo.state = 'active'
     todo.save!
     get :index
     assert_select("div#notes_todo_#{todo.id}", 'link me to onenote')
